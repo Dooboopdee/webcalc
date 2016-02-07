@@ -1,3 +1,3 @@
 # webcalc
-An online basic calculator built for the web
+A simple calculator built for the web.
 
