@@ -1,7 +1,7 @@
 <DOCTYPE=html>
 <html>
 <head>
-	<title>Web Calc</title>
+	<title>Web Calculator</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="favicon.ico" rel="icon" type="image/x-icon" />
@@ -16,16 +16,16 @@
 	<link href='main.css' rel='stylesheet' type='text/css'>
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<!-- JQuery UI -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </head>
 <body>
-	<h1 id="mainTitle">Web Calc .</h1>
-	<h3 id="subTitle">Made by | John Garrison &copy; </h3>
-
 	<div id="calculator">
 		<!-- Screen and clear key -->
 		<div class="top">
 			<span class="clear">C</span>
-			<div class="screen"></div>
+			<div class="screen" style="font-size:2.4em;"></div>
 		</div>
 	
 		<div class="keys">
@@ -47,18 +47,17 @@
 			<span class="eval">=</span>
 			<span class="operator">x</span>
 		</div>
+		<span id="bottomCalcTitle">Web Calculator | &copy; johntg.com</span>
 	</div>
 </div>
 
-<!-- PrefixFree -->
-<!--<script src="http://thecodeplayer.com/uploads/js/prefixfree-1.0.7.js" type="text/javascript" type="text/javascript"></script>-->
-<!-- JQuery 2.2.0 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<!-- Allow calculator to be dragged around -->
+<!-- Test to see if JQuery library is loaded -->
 <script type="text/javascript">
-
-
+	$(document).ready(function() {
+		$('#calculator').draggable();
+	});
 </script>
+<script src="calc.js"></script>
 
 </body>
 </html>

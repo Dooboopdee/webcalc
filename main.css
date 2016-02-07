@@ -5,47 +5,33 @@ Bootstrap overrides and custom
 styling.
 *******************************/
 
+
+/*******************************
+GENERAL
+*******************************/
+
 html {
 	height: auto;
 	background: white;
 	background: radial-gradient(circle, #FFF 20%, #DBDBDB);
 	background-size: cover;
+	overflow: auto;
 }
 
 body {
 	font-size: 62.5%;
 	width: auto;
+	position: relative;
 }
 
 /*******************************
-Heading/Title
+Calculator
 *******************************/
-
-#mainTitle {
-	font-family: 'Lobster', sans-serif;
-	font-size: 7em;
-	text-align: center;
-	color: #B53A3A;
-}
-
-#subTitle {
-	font-family: 'Lobster', sans-serif;
-	font-size: 1.7em;
-	text-align: center;
-	color: #B53A3A;
-	margin-top: 0;
-}
-
-/*******************************
-General
-*******************************/
-
-
 
 #calculator {
 	width: 325px;
 	height: auto;
-	
+	position: fixed;
 	margin: 10em auto;
 	padding-top: 2em;
 	padding-left: 2em;
@@ -59,6 +45,11 @@ General
 
 .top {
 	margin-top: 2em;
+}
+
+.screen {
+	font-family: 'Roboto', arial;
+	font-size: 1em;
 }
 
 .clear {
@@ -148,6 +139,7 @@ General
 	background: #E37F7F;
 	box-shadow: 0px 4px #B37272;
 	color: white;
+	font-family: 'Roboto', sans-serif;
 }
 
 /* Some hover effects */
@@ -158,7 +150,7 @@ General
 }
 
 .keys span.eval:hover {
-	background: #E37F7F;
+	background: #DE5959;
 	box-shadow: 0px 4px #B37272;
 	color: #ffffff;
 }
@@ -183,4 +175,11 @@ General
 .top span.clear:active {
 	top: 4px;
 	box-shadow: 0px 0px #d3545d;
+}
+
+#bottomCalcTitle {
+	font-size: 1.2em;
+	font-family: 'Lobster', arial;
+	color: #BDBDBD;
+	margin-left: 7em;
 }
