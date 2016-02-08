@@ -26,11 +26,14 @@ $('#getQuoteBtn').click(function() {
    			return color;
    		}
     }
-
+    // Get random quote from API
+    var quote = 'This is still under construction yo ;)';
 
     // JQuery to reassign the values from above to the correct css properties
     $(this).css('background-color',getRandomColor());
     $('#getQuoteTxt').css('color', getQuoteTxtColor());
     $('#getQuoteBtn:hover').css('box-shadow: 0px 0px ', getRandomColor());
     $('#getQuoteBtn:active').css('box-shadow: 0px 0px ', getRandomColor());
+    // Put quote in screen display div for output
+    $('.screenQuote').append(quote);
 });
