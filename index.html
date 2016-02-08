@@ -1,7 +1,7 @@
 <DOCTYPE=html>
 <html>
 <head>
-	<title>Web Calculator</title>
+	<title>Simple Web Utilities</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="favicon.ico" rel="icon" type="image/x-icon" />
@@ -20,44 +20,57 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </head>
-<body>
-	<div id="calculator">
-		<!-- Screen and clear key -->
-		<div class="top">
-			<span class="clear">C</span>
-			<div class="screen" style="font-size:2.4em;"></div>
-		</div>
+	<body>
+		<!-- Basic Calculator -->
+		<div id="calculator">
+			<!-- Screen and clear key -->
+			<div class="top">
+				<span class="clearCalc">C</span>
+				<div class="screenCalc" style="font-size:2.4em;"></div>
+			</div>
 	
-		<div class="keys">
-			<!-- operators and other keys -->
-			<span>7</span>
-			<span>8</span>
-			<span>9</span>
-			<span class="operator">+</span>
-			<span>4</span>
-			<span>5</span>
-			<span>6</span>
-			<span class="operator">-</span>
-			<span>1</span>
-			<span>2</span>
-			<span>3</span>
-			<span class="operator">÷</span>
-			<span>0</span>
-			<span>.</span>
-			<span class="eval">=</span>
-			<span class="operator">x</span>
+			<div class="keys">
+				<!-- operators and other keys -->
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<span class="operator">+</span>
+				<span>4</span>
+				<span>5</span>
+				<span>6</span>
+				<span class="operator">-</span>
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span class="operator">÷</span>
+				<span>0</span>
+				<span>.</span>
+				<span class="eval">=</span>
+				<span class="operator">x</span>
+			</div>
+			<span id="bottomCalcTitle">Web Calculator | &copy; johntg.com</span>
 		</div>
-		<span id="bottomCalcTitle">Web Calculator | &copy; johntg.com</span>
+
+		<!-- Quote Generator - Grab a random quote to display -->
+		<div id="quotegenerator">
+			<!-- Screen and create quote key -->
+			<span class="getQuote">Get Another</span>
+			<div class="screenQuote" style="font-size:2.4em;"></div>
+
+
+		</div>
 	</div>
-</div>
 
-<!-- Test to see if JQuery library is loaded -->
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('#calculator').draggable();
-	});
-</script>
-<script src="calc.js"></script>
-
-</body>
+	<!-- Wait till doc is loaded, then make objects draggable -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#calculator').draggable();
+			$('#quotegenerator').draggable();
+		});
+	</script>
+	<!-- Calculator script -->
+	<script src="calc.js"></script>
+	<!-- Random Quote script -->
+	<script src="randquote.js"></script>
+	</body>
 </html>

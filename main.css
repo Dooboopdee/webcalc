@@ -47,16 +47,20 @@ Calculator
 	margin-top: 2em;
 }
 
-.screen {
+.screenCalc {
 	font-family: 'Roboto', arial;
 	font-size: 1em;
 }
 
-.clear {
+.clearCalc {
 
 }
 
-.top .screen {
+.clearQuote {
+
+}
+
+.top .screenCalc {
 	height: 40px;
 	width: 212px;
 	
@@ -93,7 +97,7 @@ Calculator
 }
 
 /* Applying same to the keys */
-.keys span, .top span.clear {
+.keys span, .top span.clearCalc {
 	float: left;
 	position: relative;
 	top: 0;
@@ -135,7 +139,7 @@ Calculator
 	font-size: 2.4em;
 }
 
-.top span.clear {
+.top span.clearCalc {
 	background: #E37F7F;
 	box-shadow: 0px 4px #B37272;
 	color: white;
@@ -155,7 +159,7 @@ Calculator
 	color: #ffffff;
 }
 
-.top span.clear:hover {
+.top span.clearCalc:hover {
 	background: #f68991;
 	box-shadow: 0px 4px #d3545d;
 	color: white;
@@ -172,7 +176,7 @@ Calculator
 	top: 4px;
 }
 
-.top span.clear:active {
+.top span.clearCalc:active {
 	top: 4px;
 	box-shadow: 0px 0px #d3545d;
 }
@@ -183,3 +187,26 @@ Calculator
 	color: #BDBDBD;
 	margin-left: 7em;
 }
+
+
+
+/*******************************
+QUOTE GENERATOR
+*******************************/
+
+
+#quotegenerator {
+	width: 325px;
+	height: auto;
+	position: fixed;
+	margin: 10em auto;
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 2em;
+	
+	background: linear-gradient(#186F8C, #105870); /* Calc BG */
+	border-radius: 3px;
+	box-shadow: 0px 4px #134859, 0px 10px 15px rgba(0, 0, 0, 0.2);
+
+
