@@ -13,7 +13,7 @@
 	<!-- Lobster -->
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 	<!-- Main styling -->
-	<link href='main.css' rel='stylesheet' type='text/css'>
+	<link href='css/main.css' rel='stylesheet' type='text/css'>
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<!-- JQuery UI -->
@@ -53,24 +53,26 @@
 
 		<!-- Quote Generator - Grab a random quote to display -->
 		<div id="quotegenerator">
-			<!-- Screen and create quote key -->
-			<span class="getQuote">Get Another</span>
+			<h3 id="quoteTitle">Random Quote Machine</h3>
+			<!-- Screen and get quote key -->
 			<div class="screenQuote" style="font-size:2.4em;"></div>
+			<div id="getQuoteBtn"><span id="getQuoteTxt">Get<br/>Quote</span></div>
+			
 
 
 		</div>
 	</div>
 
 	<!-- Wait till doc is loaded, then make objects draggable -->
-	<script type="text/javascript">
+	<script>
 		$(document).ready(function() {
 			$('#calculator').draggable();
 			$('#quotegenerator').draggable();
 		});
 	</script>
 	<!-- Calculator script -->
-	<script src="calc.js"></script>
+	<script src="scripts/calc.js"></script>
 	<!-- Random Quote script -->
-	<script src="randquote.js"></script>
+	<script src="scripts/randquote.js"></script>
 	</body>
 </html>
